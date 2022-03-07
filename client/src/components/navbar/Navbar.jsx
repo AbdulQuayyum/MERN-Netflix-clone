@@ -28,7 +28,7 @@ const Navbar = () => {
                 <span>Quayyum</span>
                 <Notifications className="icon"/>
                 <img
-                  src="https://mcdn.wallpapersafari.com/medium/40/52/lHEsPO.jpg"
+                  src="https://media-exp1.licdn.com/dms/image/C5603AQHguWnYXDlslw/profile-displayphoto-shrink_800_800/0/1642283387726?e=1652313600&v=beta&t=S0zeDpgq2eHEuslAphMQHmmDOu139z2o-bAeaqP-8lk"
                   alt=""
                   />
                   <div className="profile">
