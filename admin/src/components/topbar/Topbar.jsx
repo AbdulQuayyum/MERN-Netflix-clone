@@ -7,7 +7,7 @@ export default function Topbar() {
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <span className="logo">Quayyum Admin</span>
+          <span className="logo">lamaadmin</span>
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
@@ -21,7 +21,7 @@ export default function Topbar() {
           <div className="topbarIconContainer">
             <Settings />
           </div>
-          <img src="https://media-exp1.licdn.com/dms/image/C5603AQHguWnYXDlslw/profile-displayphoto-shrink_800_800/0/1642283387726?e=1652313600&v=beta&t=S0zeDpgq2eHEuslAphMQHmmDOu139z2o-bAeaqP-8lk" alt="" className="topAvatar" />
+          <img src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="topAvatar" />
         </div>
       </div>
     </div>
