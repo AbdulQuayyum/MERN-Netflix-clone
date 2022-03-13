@@ -5,7 +5,7 @@ const CryptoJS = require("crypto-js");
 
 //UPDATE
 
-router.put("/:id", verify, async (req, res) => {
+router.put("/:id", async (req, res) => {
     if (req.user.id === req.params.id || req.user.isAdmin) {
       if (req.body.password) {
         req.body.password = CryptoJS.AES.encrypt(
