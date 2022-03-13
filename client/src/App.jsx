@@ -5,7 +5,32 @@ import Watch from "./pages/watch/Watch";
 import Login from "./pages/login/Login";
 
 const App = () => {
-  return <Home/>;
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          {user ? <Home /> : <Redirect to="/register" />}
+        </Route>
+        <Route path="/register">
+          {!user ? <Register /> : <Redirect to="/" />}
+        </Route>
+        <Route path="/login">{!user ? <Login /> : <Redirect to="/" />}</Route>
+        {user && (
+          <>
+            <Route path="/movies">
+              <Home type="movie" />
+            </Route>
+            <Route path="/series">
+              <Home type="series" />
+            </Route>
+            <Route path="/watch">
+              <Watch />
+            </Route>
+          </>
+        )}
+      </Switch>
+    </Router>
+  );
 };
 
 export default App;
